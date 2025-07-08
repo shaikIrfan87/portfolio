@@ -1,5 +1,3 @@
-"use client"
-
 import { Badge } from "./components/ui/badge";
 import { Button } from "./components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./components/ui/card"
@@ -28,8 +26,6 @@ import {
   Globe,
   Calendar,
 } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
 import { useEffect, useState, useRef } from "react"
 
 export default function Portfolio() {
@@ -245,13 +241,13 @@ export default function Portfolio() {
       <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-black/20 backdrop-blur-xl supports-[backdrop-filter]:bg-black/20">
         <div className="container flex h-16 items-center">
           <div className="mr-4 flex">
-            <Link href="#" className="mr-6 flex items-center space-x-2 group">
+            <a href="#" className="mr-6 flex items-center space-x-2 group">
               <div className="relative">
                 <Brain className="h-8 w-8 text-purple-400 group-hover:text-purple-300 transition-colors" />
                 <div className="absolute inset-0 bg-purple-400 rounded-full blur-lg opacity-20 group-hover:opacity-40 transition-opacity"></div>
               </div>
               <span className="font-bold text-white text-xl">Irfan Shaik</span>
-            </Link>
+            </a>
           </div>
           <nav className="flex flex-1 justify-center items-center space-x-8 text-sm font-medium">
             {[
@@ -261,7 +257,7 @@ export default function Portfolio() {
               "Experience",
               "Contact"
             ].map((item) => (
-              <Link
+              <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
                 className={`transition-all duration-300 hover:text-purple-300 relative ${
@@ -272,7 +268,7 @@ export default function Portfolio() {
                 {isMounted && activeSection === item.toLowerCase() && (
                   <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-purple-400 rounded-full"></div>
                 )}
-              </Link>
+              </a>
             ))}
           </nav>
           {/* Resume button removed */}
@@ -291,13 +287,12 @@ export default function Portfolio() {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
               <div className="relative">
-                <Image
+                <img
                   src="/profile.png"
                   alt="Irfan Shaik - AI & ML Engineer"
                   width={300}
                   height={300}
                   className="rounded-full border-4 border-purple-400/30 shadow-2xl group-hover:border-purple-400/50 transition-all duration-500"
-                  priority
                 />
                 <div className="absolute inset-0 rounded-full bg-gradient-to-t from-purple-900/20 to-transparent"></div>
                 {/* Floating Badge */}
@@ -423,7 +418,7 @@ export default function Portfolio() {
 
             <div className="relative">
               <div className="relative group">
-                <Image
+                <img
                   src="/placeholder.png"
                   alt="Irfan working on AI projects"
                   width={400}
@@ -549,7 +544,7 @@ export default function Portfolio() {
 
                   {/* Project Image */}
                   <div className="relative overflow-hidden">
-                    <Image
+                    <img
                       src={project.image || "/NLP.png"}
                       alt={project.title}
                       width={350}
@@ -583,9 +578,9 @@ export default function Portfolio() {
                           className="text-white/60 hover:text-purple-300 h-8 w-8"
                           asChild
                         >
-                          <Link href={project.github}>
+                          <a href={project.github}>
                             <Github className="h-4 w-4" />
-                          </Link>
+                          </a>
                         </Button>
                         <Button
                           variant="ghost"
@@ -593,9 +588,9 @@ export default function Portfolio() {
                           className="text-white/60 hover:text-purple-300 h-8 w-8"
                           asChild
                         >
-                          <Link href={project.demo}>
+                          <a href={project.demo}>
                             <ExternalLink className="h-4 w-4" />
-                          </Link>
+                          </a>
                         </Button>
                       </div>
                     </div>
@@ -1176,10 +1171,10 @@ export default function Portfolio() {
               className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300"
               asChild
             >
-              <Link href="mailto:shaikirfanahamed87@email.com">
+              <a href="mailto:shaikirfanahamed87@email.com">
                 <Mail className="h-5 w-5 mr-2" />
                 shaikirfanahamed87@email.com
-              </Link>
+              </a>
             </Button>
           </div>
 
@@ -1190,9 +1185,9 @@ export default function Portfolio() {
                   className="text-white/60 hover:text-purple-300 hover:bg-purple-400/10 transform hover:scale-110 transition-all duration-300"
                   asChild
                 >
-                  <Link href="https://github.com/shaikIrfan87">
+                  <a href="https://github.com/shaikIrfan87">
                     <Github className="h-6 w-6" />
-                  </Link>
+                  </a>
                 </Button>
             <Button
               variant="ghost"
@@ -1200,9 +1195,9 @@ export default function Portfolio() {
               className="text-white/60 hover:text-blue-300 hover:bg-blue-400/10 transform hover:scale-110 transition-all duration-300"
               asChild
             >
-              <Link href="https://www.linkedin.com/in/shaikirfan87">
+              <a href="https://www.linkedin.com/in/shaikirfan87">
                 <Linkedin className="h-6 w-6" />
-              </Link>
+              </a>
             </Button>
           </div>
         </div>
