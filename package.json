@@ -11,8 +11,8 @@
     "dev:next": "next dev",
     "lint": "next lint",
     "start": "next start",
-    "predeploy": "next build",
-    "deploy": "gh-pages -d out --dotfiles"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

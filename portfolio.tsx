@@ -107,7 +107,7 @@ export default function Portfolio() {
       demo: "#",
       status: "Completed",
       gradient: "from-blue-500 to-purple-600",
-      image: "/NLP.png",
+      image: "NLP.png",
       icon: Brain,
     },
     {
@@ -125,7 +125,7 @@ export default function Portfolio() {
       demo: "#",
       status: "🏆 1st Prize Winner",
       gradient: "from-green-500 to-teal-600",
-      image: "/diet.png",
+      image: "diet.png",
       icon: Trophy,
     },
     {
@@ -143,7 +143,7 @@ export default function Portfolio() {
       demo: "#",
       status: "In Progress",
       gradient: "from-orange-500 to-red-600",
-      image: "/ai_symtes.png",
+      image: "ai_symtes.png",
       icon: Smartphone,
     },
     {
@@ -161,7 +161,7 @@ export default function Portfolio() {
       demo: "#",
       status: "Completed",
       gradient: "from-cyan-500 to-blue-600",
-      image: "/Flood alerting system.png",
+      image: "Flood alerting system.png",
       icon: Building,
     },
     {
@@ -174,7 +174,7 @@ export default function Portfolio() {
       demo: "#",
       status: "Research Phase",
       gradient: "from-purple-500 to-pink-600",
-      image: "/voting system.png",
+      image: "voting system.png",
       icon: Database,
     },
     {
@@ -192,7 +192,7 @@ export default function Portfolio() {
       demo: "#",
       status: "Beta Testing",
       gradient: "from-indigo-500 to-purple-600",
-      image: "/code review.png",
+      image: "code review.png",
       icon: Code,
     },
     {
@@ -210,7 +210,7 @@ export default function Portfolio() {
       demo: "#",
       status: "Pilot Testing",
       gradient: "from-green-500 to-emerald-600",
-      image: "/smart system.png",
+      image: "smart system.png",
       icon: Globe,
     },
   ]
@@ -288,7 +288,7 @@ export default function Portfolio() {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
               <div className="relative">
                 <img
-                  src="/profile.png"
+                  src="profile.png"
                   alt="Irfan Shaik - AI & ML Engineer"
                   width={300}
                   height={300}
@@ -354,7 +354,7 @@ export default function Portfolio() {
               className="border-purple-400/50 text-purple-300 hover:bg-purple-400/10"
               asChild
             >
-              <a href="/irfan_Resume.pdf" download="irfan_Resume.pdf">
+              <a href="/portfolio/irfan_Resume.pdf" download="irfan_Resume.pdf">
                 <Download className="h-4 w-4 mr-2" />
                 Resume
               </a>
@@ -419,7 +419,7 @@ export default function Portfolio() {
             <div className="relative">
               <div className="relative group">
                 <img
-                  src="/placeholder.png"
+                  src="placeholder.png"
                   alt="Irfan working on AI projects"
                   width={400}
                   height={400}
@@ -545,7 +545,7 @@ export default function Portfolio() {
                   {/* Project Image */}
                   <div className="relative overflow-hidden">
                     <img
-                      src={project.image || "/NLP.png"}
+                      src={project.image || "NLP.png"}
                       alt={project.title}
                       width={350}
                       height={200}
