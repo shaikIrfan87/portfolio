@@ -1,0 +1,16 @@
+# Shaik Irfan Ahamed
+
+> AI/ML Engineer and Systems Developer based in Kadapa, Andhra Pradesh, India.
+
+- Core Focus: Local-first edge-AI architectures, neuro-symbolic reasoning, secure application gateways, and high-performance Python/FastAPI backends.
+- GitHub: https://github.com/shaikIrfan87
+- LinkedIn: https://linkedin.com/in/shaikirfan87
+
+## Projects
+- VULNERA-MAP & SentryMCP: Neuro-symbolic cybersecurity frameworks for SBOM vulnerability detection and MCP security gateways.
+- ClinXAI: Multimodal medical diagnostic decision support system fusing DenseNet-121 and tabular patient data.
+- The Precision Harvest: Offline edge-AI mobile application for crop disease detection.
+- AutoAgent: Autonomous offline desktop automation engine using Ollama local LLMs/VLMs.
+
+## Tech Stack
+- Python, SQL, PyTorch, TensorFlow, FastAPI, Flask, Docker, Git, Ollama, OpenCV, MediaPipe.
